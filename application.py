@@ -9,7 +9,7 @@ root = tk.Tk()
 root.title('CVRP')
 canvas1 = tk.Canvas(root, width=800, height=350)
 canvas1.pack()
-imagepath1 =  r'C:\Users\Kika\Desktop\best.jpg'
+imagepath1 = './background.jpg'
 image1 = ImageTk.PhotoImage(file=imagepath1)
 canvas1.create_image(400, 200, image=image1)
 
