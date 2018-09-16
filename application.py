@@ -27,18 +27,18 @@ label1=canvas1.create_text((130, 220), text="Instance:")
 tkvar1 = tk.StringVar(root)
 choices1= {'P-n16-k8', 'P-n19-k2', 'P-n20-k2','P-n22-k2','P-n22-k8','E-n22-k4','E-n23-k3','E-n30-k3'}
 tkvar1.set('P-n16-k8')
-MenButt1=tk.OptionMenu(canvas1,tkvar1,*choices1)
+mb1=tk.OptionMenu(canvas1,tkvar1,*choices1)
 canvas1.create_window(211,220,
-                      window=MenButt1)
+                      window=mb1)
 
 label1=canvas1.create_text((95, 260), text="Metaheuristic method:")
 tkvar2 = tk.StringVar(root)
 
 choices2= {'LS', 'VNS', 'SA'}
 tkvar2.set('VNS')
-MenButt2=tk.OptionMenu(canvas1,tkvar2,*choices2)
+mb2=tk.OptionMenu(canvas1,tkvar2,*choices2)
 canvas1.create_window(200,260,
-                      window=MenButt2)
+                      window=mb2)
 
 figure2 = Figure(figsize=(5, 4), dpi=80)
 subplot2 = figure2.add_subplot(111)
